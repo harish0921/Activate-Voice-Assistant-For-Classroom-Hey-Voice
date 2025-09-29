@@ -1,7 +1,11 @@
 import csv
 import sqlite3
 
+<<<<<<< HEAD
 con = sqlite3.connect("voice.db")
+=======
+con = sqlite3.connect("jarvis.db")
+>>>>>>> 11453b1 (Add new feature)
 cursor = con.cursor()
 
 query = "CREATE TABLE IF NOT EXISTS sys_command(id integer primary key, name VARCHAR(100), path VARCHAR(1000))"

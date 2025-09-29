@@ -19,7 +19,11 @@ import pvporcupine
 from engine.helper import extract_yt_term, remove_words
 from hugchat import hugchat
 
+<<<<<<< HEAD
 con = sqlite3.connect("voice.db")
+=======
+con = sqlite3.connect("jarvis.db")
+>>>>>>> 11453b1 (Add new feature)
 cursor = con.cursor()
 
 @eel.expose
@@ -79,7 +83,11 @@ def hotword():
     try:
        
         # pre trained keywords    
+<<<<<<< HEAD
         porcupine=pvporcupine.create(keywords=["voice","alexa"]) 
+=======
+        porcupine=pvporcupine.create(keywords=["jarvis","alexa"]) 
+>>>>>>> 11453b1 (Add new feature)
         paud=pyaudio.PyAudio()
         audio_stream=paud.open(rate=porcupine.sample_rate,channels=1,format=pyaudio.paInt16,input=True,frames_per_buffer=porcupine.frame_length)
         
